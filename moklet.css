@@ -1,0 +1,786 @@
+body{
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+div.menu{
+	height: 70px;
+	width: 100%;
+	background-image: linear-gradient(to top, #00000000 0, #2d2d2d 130%);
+	font-family: Tw Cen Mt;
+	position: fixed;
+	top: 0;
+	right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+div.menu ul{
+	list-style-type: none; /*Menghilangkan bullet*/
+	overflow: hidden; /*Menghilangkan scroll bar*/
+	padding: 0; /*Jarak antara border dan content (jarak dalam)*/
+	margin: 0; /*Jarak antara tiap element (jarak luar)*/
+}
+
+div.menu ul li{
+	float: right; /*Posisi element dari kanan*/
+}
+
+div.menu ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	padding: 20px 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+	display: block;
+	position: relative;
+}
+
+div.menu ul li a:hover{
+	border-top: 2px solid red;
+	color: red;
+}
+
+div.menu img{
+	float: left;
+	width: 150px;
+	height: 40px;
+	margin-top: 10px;
+	margin-left: 40px;
+}
+
+div.header{
+	width: 100%;
+	height: 700px;
+	background: url("telkom.JPG") no-repeat center;
+	background-size: cover;
+	float: left;
+}
+
+div.bayangan{
+	width: 100%;
+	height: 700px;
+	background: black;
+	float: left;
+	opacity: 0.5;
+}
+
+div.header h1{
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	top: 150px;
+	left: 350px; 
+	font-size: 50px;
+	font-weight: 10;
+	font-family: Bahnschrift, sans-serif;
+}
+
+div.header h1 img{
+	width: 120px;
+	height: 120px;
+}
+
+div.header h3{
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	top: 370px;
+	left: 510px; 
+	font-size: 30px;
+	font-weight: 10;
+	font-family: Bahnschrift, sans-serif;
+}
+
+div.about{
+	width: 100%;
+	height: 400px;
+	padding: 0;
+	margin-top: 50px;
+	float: left;
+}
+
+div.about .left{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+div.about .left h1{
+	padding-right: 45px;
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 10;
+	font-family: Bahnschrift, sans-serif;
+	border-right: 5px solid red;
+}
+
+div.about .left p{
+	font-family: Bahnschrift, sans-serif;
+	text-align: right;
+	margin-left: 20px;
+	color: gray;
+	font-size: 20px;
+}
+
+div.about .right{
+	width: 45%;
+	height: 100%;
+	float: right;
+}
+
+div.about .right img{
+	width: 500px;
+	height: auto;
+	margin-top: 5px;
+	margin-left: 20px;
+	border: 10px solid #000;
+	border-radius: 15px;
+}
+
+div.layanan{
+	width: 100%; 
+	height: 400px;
+	float: left;
+	margin-top: 20px;
+}
+
+div.layanan .box{
+	width: 20%;
+	height: 100%;
+	float: left;
+	margin: 10px;
+	margin-left: 45px;
+}
+
+div.layanan .box .ikon{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 0 auto;
+	display: flex;
+}
+
+div.layanan .box .ikon span{
+	font-size: 50px;
+	color: #fff;
+	margin: auto;
+}
+
+div.layanan .box .desc{
+	margin-top: 10px;
+	text-align: center;
+	font-size: 15px;
+	color: gray;
+	font-family: Bahnschrift, sans-serif;
+}
+
+div.layanan .box .desc h1{
+	font-size: 20px;
+	font-weight: 10;
+	text-transform: uppercase;
+	font-family: Bahnschrift, sans-serif;
+}
+
+.bg-1{
+	background: #d60000;
+}
+.bg-2{
+	background: #f79999;
+}
+.bg-3{
+	background: gray;
+}
+.bg-4{
+	background: black;
+}
+.bg-5{
+	background: white;
+}
+
+.txt-1{
+	color: #d60000;
+}
+.txt-2{
+	color: rgb(208, 96, 96);
+}
+.txt-3{
+	color: gray;
+}
+.txt-4{
+	color: black;
+}
+.txt-5{
+	color: red;
+}
+
+div.penghargaan{
+	width: 100%;
+	height: 700px;
+	margin-bottom: 100px;
+	background: url("ft1.jpg") no-repeat top;
+	margin-top: -50px;
+	background-size: cover;
+	float: left;
+	position: relative;
+}
+
+div.penghargaan .gelap{
+	background: linear-gradient(to right, #000, #000, transparent);
+	width: 100%;
+	height: 100%;
+	float: left;
+	opacity: 0.7;
+}
+
+div.penghargaan .left{
+	width: 50%;
+	text-align: right;
+	padding-right: 25px;
+	border-right: 5px solid red;
+	position: absolute;
+	float: left;
+	margin-top: 300px;
+}
+
+div.penghargaan .left h1{
+	margin: 2px;
+	font-size: 50px;
+	font-weight: 400;
+	color: white;
+	font-family: Bahnschrift, sans-serif;
+	text-transform: uppercase;
+}
+
+div.penghargaan .left h2{
+	margin: 2px;
+	color: lightgray;
+	font-size: 30px;
+	font-weight: 400;
+	font-family: Bahnschrift, sans-serif;
+	text-transform: uppercase;
+}
+
+div.penghargaan .left h3{
+	margin: 2px;
+	color: white;
+	font-size: 20px;
+	font-weight: 200;
+	font-family: Bahnschrift, sans-serif;
+	text-transform: uppercase;
+}
+
+div.penghargaan .right{
+	width: 45%;
+	height: auto;
+	float: right;
+	position: absolute;
+}
+
+div.penghargaan .right img{
+	width: 140px;
+	height: auto;
+	margin-top: 285px;
+	margin-left: 725px;
+}
+
+div.studi{
+	width: 100%;
+	height: 250px;
+	float: left;
+	position: flex;
+}
+
+div.studi .ikon{
+	width: 100px;
+	height: 100px;
+	margin: auto; 
+	border-radius: 50%;
+	display: flex;
+}
+
+div.studi .ikon span{
+	font-size: 50px;
+	color: #fff;
+	margin: auto;
+}
+
+div.studi h1{
+	text-align: center;
+	font-size: 40px;
+	font-weight: 400;
+	font-family: Bahnschrift, sans-serif;
+	color: black;
+	text-transform: uppercase;
+}
+
+div.studi p{
+	color: gray;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 200;
+	font-family: Bahnschrift, sans-serif;
+}
+
+div.prodi{
+	width: 100%;
+	height: 550px;
+	margin-bottom: 100px;
+	float: left;
+	background: linear-gradient(#fff 250px, #d60000 250px);
+}
+
+div.prodi img{
+	margin-left: 150px;
+}
+
+div.prodi .jurusan{
+	width: 50%;
+	height: auto;
+	float: left;
+}
+
+div.prodi .jurusan h3{
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+	font-family: Bahnschrift, sans-serif;
+}
+
+div.prodi .jurusan p{
+	color: #fff;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 200;
+	font-family: Century Gothic, sans-serif;
+}
+
+div.prestasi{
+	width: 100%;
+	height: 600px;
+	margin-bottom: 100px;
+	float: left;
+	background: linear-gradient(#fff 500px, #d60000 100px);
+}
+
+div.prestasi .left{
+	width: 40%;
+	height: auto;
+	float: left;
+}
+
+div.prestasi .left h1{
+	margin-left: 50px;
+	color: black;
+	font-size: 65px;
+	font-weight: 200;
+	text-transform: uppercase;
+	font-family: Bahnschrift, sans-serif;
+	border-left: 5px solid #d60000;
+	padding-left: 50px; 
+}
+
+div.prestasi .left p{
+	margin-top: -10px;
+	margin-left: 50px;
+	color: gray;
+	font-size: 17px;
+	font-weight: 100;
+	font-family: Century Gothic, sans-serif;
+}
+
+div.prestasi .right{
+	width: 60%;
+	height: 100%;
+	float: right;
+}
+
+div.prestasi .right img{
+	margin-top: 40px;
+	width: 650px;
+	height: auto;
+	margin-left: 20px;
+	border: 20px ridge lightgray;
+	border-radius: 15px;
+}
+
+div.prestasi .footer{
+	position: relative;
+	top: 180px;
+	margin-left: 50px;
+}
+
+div.prestasi .footer h3{
+	color: #fff;
+	font-size: 25px;
+	font-weight: 200;
+	font-family: Bahnschrift, sans-serif;
+}
+
+div.info{
+	width: 100%;
+	height: 650px;
+	margin-bottom: 50px;
+	float: left;
+	background: linear-gradient(#fff 400px, #d60000 150px);
+}
+
+div.info .ikon{
+	width: 100px;
+	height: 100px;
+	margin: auto; 
+	border-radius: 50%;
+	display: flex;
+}
+
+div.info .ikon span{
+	font-size: 50px;
+	color: #fff;
+	margin: auto;
+}
+
+div.info h1{
+	text-align: center;
+	font-size: 60px;
+	font-weight: 200;
+	margin: 20px;
+	font-family: Bahnschrift, sans-serif;
+	text-transform: uppercase;
+}
+
+div.info p{
+	color: gray;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 100;
+	font-family: Century Gothic, sans-serif;
+}
+
+div.info .update{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding-left: 20px;
+	position: relative;
+}
+
+div.info .update .left{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+div.info .update .left .ikon1{
+	width: 100px;
+	height: 100px;
+	margin: auto; 
+	border-radius: 50%;
+	display: flex;
+	margin-left: 50px;
+	margin-top: 100px;
+}
+
+div.info .update .left .ikon1 span{
+	font-size: 50px;
+	color: #fff;
+	margin: auto;
+}
+
+div.info .update .left h1{
+	padding-left: 30px;
+	text-align: left;
+	font-size: 25px;
+	font-weight: 200;
+	padding-top: -10px;
+	color: #fff;
+	font-family: Bahnschrift, sans-serif;
+	text-transform: uppercase;
+}
+
+div.info .update .left p{
+	color: lightgray;
+	text-align: left;
+	padding-left: 50px;
+	font-size: 17px;
+	font-weight: 100;
+	font-family: Century Gothic, sans-serif;
+}
+
+div.info .update .right{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+div.info .update .right .sosmed{
+	width: 10%;
+	height: 100%;
+	margin: 10px;
+	margin-left: 60px;
+	float: left;
+}
+
+div.info .update .right .sosmed .ikon{
+	width: 100px;
+	height: 100px;
+	margin: auto; 
+	border-radius: 50%;
+	display: flex;
+	margin-left: -10px;
+	margin-top: 200px;
+}
+
+div.info .update .right .sosmed .ikon a{
+	font-size: 50px;
+	color: #d60000;
+	text-decoration: none;
+	margin: auto;
+}
+
+div.kata{
+    width: 100%;
+    height: 500px;
+    background: url("prestasi.jpg") no-repeat center;
+    background-size: cover;
+    float: left;
+    position: relative;
+}
+
+div.kata h1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    /* top: 100%; */
+    /* position: absolute; */
+    left: 500px;
+    /* float: left; */
+}
+
+div.kata h3{
+    color: white;
+    text-align:center;
+}
+
+div.kata .profil{
+    width: 50%;
+    height: auto;
+    float: left;
+    position: absolute;
+    top:100px;
+    left: 400px;
+}
+
+div.kata .profil img{
+    border-radius: 50%;
+    float: left;
+    margin: 20px;
+    position: absolute;
+    margin-left: 200px;
+}
+
+div.kata .profil h2{
+    text-align: center;
+    position: absolute;
+    left: 170px;
+    margin-top: 150px;
+    color: white;
+}
+
+div.kata .profil h4{
+    text-align: center;
+    position: absolute;
+    margin-top: 150px;
+    color: white;
+}
+
+div.partner{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 400px;
+	background: #fff;
+	margin-top: 150px;
+	/* float: left; */
+}
+
+div.partner .ikon{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto; 
+	border-radius: 50%;
+	display: flex;
+	margin-top: 100px;
+}
+
+div.partner .ikon span{
+	font-size: 50px;
+	color: #fff;
+	margin: auto;
+}
+
+div.partner h1{
+	text-align: center;
+	font-size: 60px;
+	font-weight: 200;
+	margin: 20px;
+	font-family: Bahnschrift, sans-serif;
+	text-transform: uppercase;
+}
+
+div.partner	 p{
+	color: gray;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 100;
+	font-family: Century Gothic, sans-serif;
+}
+
+div.partner .pihak-atas{
+	width: 100%;
+	height: 100%;
+	padding-left: 120px;
+	float: left;
+}
+
+div.partner .pihak-atas .lembaga{
+	width: 10%;
+	height: 100%;
+	margin: 10px;
+	padding-left: 50px;
+	margin-left: 50px;
+	float: left;
+}
+
+div.partner .pihak-atas .lembaga img{
+	width: 100%;
+	height: 100%;
+	margin: 60px; 
+	display: flex;
+}
+
+div.partner .pihak-bawah{
+	width: 100%;
+	height: 100%;
+	padding-left: 120px;
+	float: left;
+}
+
+div.partner .pihak-bawah .lembaga{
+	width: 10%;
+	height: 100%;
+	margin: 10px;
+	padding-left: 50px;
+	margin-left: 50px;
+	float: left;
+}
+
+div.partner .pihak-bawah .lembaga img{
+	width: 100%;
+	height: 100%;
+	margin: 2px; 
+	display: flex;
+	padding-left: 50px;
+}
+
+div.footer-1{
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #222;
+	padding-top: 50px;
+}
+
+div.footer-1 .col{
+	width: 25%;
+	height: auto;
+	color:#fff;
+	padding: 10px;
+	float: left;
+	box-sizing: border-box;
+}
+
+div.footer-1 .col img{
+	width: 156px;
+	height: 41px;
+	margin-left: 100px;
+}
+
+div.footer-1 .col h1{
+	text-align: left;
+	font-size: 17px;
+	font-weight: 200;
+	color: lightgray;
+	margin-top: 30px;
+	margin-left: 100px;
+	font-family: Bahnschrift, sans-serif;
+	text-transform: uppercase;
+}
+
+div.footer-1 .col p{
+	color: gray;
+	margin-left: 100px;
+	text-align: left;
+	font-size: 15px;
+	font-weight: 100;
+	font-family: Century Gothic, sans-serif;
+}
+
+div.footer-1 .col .ikon{
+	margin-top: -10px;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	margin-left: 90px;
+}
+
+div.footer-1 .col .ikon a{
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	color: gray;
+}
+
+div.footer-1 .col .ikon a:hover{
+	color: lightgray;
+}
+
+div.footer-1 .col h2{
+	margin-left: 30px;
+	text-align: left;
+	font-size: 17px;
+	font-weight: 200;
+	color: lightgray;
+	font-family: Bahnschrift, sans-serif;
+	text-transform: uppercase;
+}
+
+div.footer-1 .col h3{
+	text-align: left;
+	margin-left: 30px;
+	font-size: 15px;
+	font-weight: 200;
+	color: lightgray;
+	font-family: Bahnschrift, sans-serif;
+}
+
+div.footer-1 .col span{
+	margin: 10px;
+	font-size: 20px;
+}
+
+div.copyright{
+	width: 100%;
+	height: auto;
+	background: #111;
+	float: left;
+}
+
+div.copyright h5{
+	color: grey;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 20;
+	padding-left: 50px;
+}
